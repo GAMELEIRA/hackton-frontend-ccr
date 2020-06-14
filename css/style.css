@@ -1,0 +1,21 @@
+nav ul li {
+    width: 25%;
+    alt: 25%;
+}
+
+.template-cadastro {
+    width: 50%;
+    margin-left: 25%;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+}
+
+.botoes-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+#btn-enviar {
+    margin-left: 10%;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro-contatos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Milhas do Bem - Contatos</title>
+</head>
+
+<body>
+    <main>
+        <div class="template-cadastro">
+
+            <h3>Informações para contatos:</h3>
+
+            <form class="container">
+
+                <div class="form-group">
+                    <label for="cadastro-contatos-email">Informe o seu e-mail:</label>
+                    <input type="email" id="cadastro-contatos-email" class="form-control" placeholder="<nome>@dominio.com.br">
+                </div>
+
+                <div class="form-group">
+                    <label for="cadastro-contatos-numero-tel">Informe seu número fixo:</label>
+                    <input type="tel" id="cadastro-contatos-numero-tel" class="form-control" placeholder="ddd + 9999999999">
+                </div>
+
+                <div class="form-group">
+                    <label for="cadastro-contatos-numero-cel">Informe seu número celular:</label>
+                    <input type="tel" id="cadastro-contatos-numero-cel" class="form-control" placeholder="ddd + 9999999999" required>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg botoes-form" id="btn-enviar">Enviar e ir para próximo</button>
+
+                <button type="submit" class="btn btn-danger btn-lg botoes-form" id="btn-cancelar">Cancelar</button>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
