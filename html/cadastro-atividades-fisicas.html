@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/cadastro-atividades-fisicas.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milhas do Bem - Cadastro de atividades fisicas</title>
 </head>
 <header></header>
@@ -22,18 +20,18 @@
 
                 <h3>Criar atividades fisicas:</h3>
 
-                <div class="form-group">
-                    <fieldset>
-                        <legend>Atividade Fisica:</legend>
-                        <select required>
-                            <option></option>
-                            <option>Alongamento</option>
-                        </select>
-                    </fieldset>
-                    <fieldset disabled>
-                        <div class="form-group">
+                <p>Informe a atividade:</p>
 
-                            <textarea id="" name="" class="form-control" rows="4" cols="50">1- Alongue antes da musculação ou do treino aeróbico
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-alongamento" class="form-check-input" name="atividades" value="alongamento">
+                    <label for="cadastro-atividades-alongamento" class="form-check-label">Alongamento</label>
+                </div>
+
+                <p></p>
+                <fieldset disabled>
+                    <div class="form-group">
+
+                        <textarea id="" name="" class="form-control" rows="4" cols="50">1- Alongue antes da musculação ou do treino aeróbico
 O alongamento antes da prática de exercício é recomendado pois prepara o corpo para movimentos amplos, além de servir como aquecimento.
 2- Comece a alongar antes de dormir. Antes de dormir é um dos melhores momentos para fazer alongamento. O alongamento deve ser de forma tranquila, a execução deles é muito eficaz para repousar o corpo, tento um sono com maior qualidade.
 3- Invista na aula de alongamento. A prática do alongamento ganhou status de aula na academia. Tais aulas envolvem a mobilidade das articulações, e com isso aumentando a flexibilidade. Tem uma duração média entre de trinta minutos e uma hora e meia.
@@ -42,22 +40,100 @@ O alongamento antes da prática de exercício é recomendado pois prepara o corp
 6- Não trabalhe a flexibilidade sem auxílio profissional! Para começar a prática do alongamento, procure sempre um profissional. O auxílio de um profissional é primordial para obter resultados melhores. Depois que já souber todo o passo a passo, poderá repetir os movimentos em casa.
                             </textarea>
 
-                        </div>
-                    </fieldset>
 
-                    <div class="form-group">
-                        <label for="cadastro-atividades-fisicas-hora" name="data_das _atividades">Informe o horário e data de inicio das atividades:</label>
-                        <input type="datetime-local" id="cadastro-atividades-fisicas-hora" class="form-control" required>
                     </div>
+                </fieldset>
 
-                    <button type="submit" class="btn btn-success btn-lg botoes-form" id="btn-enviar">Enviar e ir para
-                        próximo</button>
+                <p>Informe a frequência:</p>
 
-                    <button type="submit" class="btn btn-danger btn-lg botoes-form" id="btn-cancelar">Cancelar</button>
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-7" class="form-check-input" name="atividades" value="7">
+                    <label for="cadastro-atividades-frequencia-7" class="form-check-label">7 Dias</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-6" class="form-check-input" name="atividades" value="6">
+                    <label for="cadastro-atividades-frequencia-6" class="form-check-label">6 Dias</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-5" class="form-check-input" name="atividades" value="5">
+                    <label for="cadastro-atividades-frequencia-5" class="form-check-label">5 Dias</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-4" class="form-check-input" name="atividades" value="4">
+                    <label for="cadastro-atividades-frequencia-4" class="form-check-label">4 Dias</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-3" class="form-check-input" name="atividades" value="3">
+                    <label for="cadastro-atividades-frequencia-3" class="form-check-label">3 Dias</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-2" class="form-check-input" name="atividades" value="2">
+                    <label for="cadastro-atividades-frequencia-2" class="form-check-label">2 Dias</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-frequencia-1" class="form-check-input" name="atividades" value="1">
+                    <label for="cadastro-atividades-frequencia-1" class="form-check-label">1 Dia</label>
+                </div>
+
+                <p></p>
+
+                <p>Informe tempo gasto:</p>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-tempo-15" class="form-check-input" name="tempo" value="15">
+                    <label for="cadastro-atividades-tempo-15" class="form-check-label">15 Min</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-tempo-10" class="form-check-input" name="tempo" value="10">
+                    <label for="cadastro-atividades-tempo-10" class="form-check-label">10 Min</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-tempo-7" class="form-check-input" name="tempo" value="7">
+                    <label for="cadastro-atividades-tempo-7" class="form-check-label">7 Min</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-tempo-5" class="form-check-input" name="tempo" value="5">
+                    <label for="cadastro-atividades-tempo-5" class="form-check-label">5 Min</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-tempo-3" class="form-check-input" name="tempo" value="3">
+                    <label for="cadastro-atividades-tempo-3" class="form-check-label">3 Min</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" id="cadastro-atividades-tempo-1" class="form-check-input" name="tempo" value="1">
+                    <label for="cadastro-atividades-tempo-1" class="form-check-label">1 Min</label>
+                </div>
+
+                <p></p>
+
+                <div class="form-group">
+                    <label for="cadastro-atividades-fisicas-hora" name="data_das _atividades">Informe o horário e data
+                        de inicio das atividades:</label>
+                    <input type="datetime-local" id="cadastro-atividades-fisicas-hora" class="form-control" required>
+                </div>
+
+                <p></p>
+
+                <button type="submit" class="btn btn-success btn-lg botoes-form" id="btn-enviar">
+                    <a href="./cadastro-avaliacao.html" style="color: white;">Enviar e ir para
+                    próximo</a></button>
+
+                <button type="submit" class="btn btn-danger btn-lg botoes-form" id="btn-cancelar">Cancelar</button>
 
             </form>
 
-            </div>
+        </div>
     </main>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

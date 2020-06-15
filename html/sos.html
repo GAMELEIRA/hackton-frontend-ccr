@@ -1,17 +1,47 @@
-<div class="container">
-    <div class="card" id="formulario-pergunta">
-        <div class="card-header">
-            <h3>Realizar Pergunta</h3>
-        </div>
-        <div class="card-body">
-            <form method="POST" action="/salvar">
-                <hr>
-                <label for="titulo">Titulo</label>
-                <input type="text" placeholder="Titulo" class="form-control" id="titulo" name="titulo">
-                <br>
-                <label for="descricao">Descrição</label>
-                <textarea placeholder="Descreva sua pergunta aqui!" class="form-control" id="descricao" name="descricao"></textarea>
-                <br>
-                <button class="btn btn-primary">Enviar</button>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Milhas do Bem - S.O.S</title>
+</head>
+
+<body id="sos">
+
+    <main>
+
+        <div class="template-cadastro">
+
+            <form class="container">
+
+                <h3>Realizar Ocorrência</h3>
+
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" placeholder="Titulo" class="form-control" id="titulo" name="titulo">
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição</label>
+                    <textarea placeholder="Descreva sua pergunta aqui!" class="form-control" id="descricao" name="descricao"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-success btn-lg botoes-form" id="btn-enviar"><a href="./menu-principal.html" style="color: white;">Enviar</a></button>
+
+                <button type="submit" class="btn btn-danger btn-lg botoes-form" id="btn-cancelar">Cancelar</button>
+
             </form>
         </div>
+        <footer></footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </div>
+    </main>
+</body>
+
+</html>
